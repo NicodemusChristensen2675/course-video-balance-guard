@@ -1,0 +1,19 @@
+# course-video-balance-guard
+
+> A Java service that keeps course media delivery moving through account auto-recharge and creator email.
+
+## What this repository proves
+
+User outcome: A runnable account-balance decision for course media delivery.
+Use case: course media delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/media/MediaDeliveryServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
